@@ -4,6 +4,7 @@ import { Header } from './components/layout/Header';
 import { Content } from './components/layout/Content';
 import { ProjectsProvider, SelectedProjectProvider } from './context';
 
+// Ryan wuz here
 export const App = ({ darkModeDefault = false }) => {
   const [darkMode, setDarkMode] = useState(darkModeDefault);
 
