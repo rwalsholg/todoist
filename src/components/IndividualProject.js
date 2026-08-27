@@ -1,3 +1,9 @@
+/**
+ * Main application root component. Manages dark mode state using React hooks, wraps the application
+ * with context providers (SelectedProjectProvider and ProjectsProvider) for global state management,
+ * and renders the Header and Content layout components. Accepts an optional darkModeDefault prop
+ * and applies the darkmode CSS class when dark mode is enabled.
+ */
 import React, { useState } from 'react';
 import { FaTrashAlt } from 'react-icons/fa';
 import PropTypes from 'prop-types';
