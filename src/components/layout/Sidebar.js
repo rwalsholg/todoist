@@ -1,8 +1,9 @@
 /**
- * Main application root component. Manages dark mode state using React hooks, wraps the application
- * with context providers (SelectedProjectProvider and ProjectsProvider) for global state management,
- * and renders the Header and Content layout components. Accepts an optional darkModeDefault prop
- * and applies the darkmode CSS class when dark mode is enabled.
+ * Left-hand navigation pane. Renders the three collated task views (Inbox, Today, Next 7 days),
+ * tracking which one is highlighted in local `active` state and pushing the matching uppercase key
+ * ('INBOX', 'TODAY', 'NEXT_7') into the selected project context so <Tasks /> can react. Below
+ * those it renders a collapsible "Projects" section, toggled by local `showProjects` state, which
+ * gates both the <Projects /> list and the <AddProject /> form. Takes no props.
  */
 import React, { useState } from 'react';
 import {
